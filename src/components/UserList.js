@@ -8,16 +8,28 @@ export default class UserList extends Component {
             display = this.props.data.map
             (
                 (person) => (
-                    <div key={person.name} className="col-md-12">
+                    <div key={person.name} className="row">
 
-                        <div>
-                            Name:{person.name}
+                        <div className="col-md-2">
+                            icon
                         </div>
-                        <div>
-                        role: {person.admin}
+
+                        <div className="col-md-6">
+
+                            <div className="row">
+                                Name:{person.name}
+
+                            </div>
+
+                            <div className="row">
+                                email:bla@mail.com
+                            </div>
+
                         </div>
-                        <div>
-                            favorite: {person.favorite}
+
+
+                        <div className="col-md-4">
+                            last loggedin :yepyep
                         </div>
 
                     </div>

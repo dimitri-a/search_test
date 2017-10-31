@@ -31,7 +31,7 @@ class Search extends Component {
     render = () => {
         console.log('this.state.filteredData=',this.state.filteredData);
         return (
-            <div className="form-group container">
+            <div className="row">
                 <input type="text" ref="search" onChange={this.handleFilter}/>
                 <div className="list">
                     <UserList data={this.state.filteredData}></UserList>
