@@ -23,7 +23,7 @@ class Search extends Component {
                 let filtered = this.state.filteredData;
                 if (this.state.search !== '') {
                     //todo remove
-                    //debugger;
+                    //debugger; 
                     console.log('event.target.value=', this.refs.search.value);
                     filtered = filtered.filter(person => person.name.includes(this.refs.search.value) > 0);
                 }
@@ -62,8 +62,7 @@ class Search extends Component {
         console.log('this.state.filteredData=', this.state.filteredData);
         return (
             <div className='row'>
-                <div className='col-md-3 well'>
-
+                <div className='col-md-3 hidden-xs'>
                     <ul>
                         <li>
                             <button className='btn btnwidth' onClick={this.handleFilter} value='all' >All users</button>
