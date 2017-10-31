@@ -8,7 +8,7 @@ export default class UserList extends Component {
             display = this.props.data.map
             (
                 (person) => (
-                    <div key={person.name} className="row">
+                    <div key={person.name} className="row row_bottom">
 
                         <div className="col-md-2">
                             <i class="fa fa-user-circle" aria-hidden="true"></i>
@@ -16,7 +16,7 @@ export default class UserList extends Component {
 
                         <div className="col-md-6">
 
-                            <div className="row">
+                            <div className="">
                                 <h3>
                                 Name:{person.name}
                                 </h3>

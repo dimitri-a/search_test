@@ -31,7 +31,7 @@ class Search extends Component {
     render = () => {
         console.log('this.state.filteredData=',this.state.filteredData);
         return (
-            <div className="row">
+            <div className="">
                 <input type="text" ref="search" onChange={this.handleFilter}/>
                 <div className="list">
                     <UserList data={this.state.filteredData}></UserList>
