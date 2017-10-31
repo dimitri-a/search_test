@@ -9,7 +9,7 @@ class Search extends Component {
 
         this.state = {
             data: users,
-            filteredData: []
+            filteredData: users
         }
     }
 
