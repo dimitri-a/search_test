@@ -14,11 +14,15 @@ class Search extends Component {
     }
 
     handleFilter = (event) => {
-        //initialise with all data
+        console.log('event',event.target.value);
+        //debugger;
         if (event) {
+
             this.setState({ filteredData: this.state.data }, () => {
                 let filtered = this.state.filteredData;
                 if (this.state.search !== '') {
+
+
                     //todo remove
                     //debugger;
                     console.log('event.target.value=', this.refs.search.value);
@@ -34,12 +38,24 @@ class Search extends Component {
         console.log('this.state.filteredData=', this.state.filteredData);
         return (
             <div className='row'>
-                <div className='col-md-3'>
-                    <div onClick=''>All users</div>
-                    <div>Favorites</div>
-                    <div>Administrators</div>
-                    <div>Nonadmins</div>
-                    <div>Archived</div>
+                <div className='col-md-3 well'>
+
+                    <ul>
+                        <li>
+                            <button className='btn btnwidth'  onClick={this.handleFilter} value='all users' >All users</button>
+                        </li>
+                        <li>
+                            <button className='btn btnwidth' onClick={this.handleFilter} value='admin' >Administrators</button>
+                        </li>
+                        <li>
+                            <button className='btn btnwidth'  onClick={this.handleFilter} value='nonadmin' >Nonadmin</button>
+                        </li>
+                        <li>
+                            <button className='btn btnwidth'  onClick={this.handleFilter} value='archived' >archived</button>
+                        </li>
+                    </ul>
+
+
 
                 </div>
                 <div className='size col-md-9'>

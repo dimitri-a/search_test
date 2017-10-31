@@ -45,3 +45,7 @@ input{
 .imp {
   font-weight: bold;
 }
+
+.btnwidth{
+  width:150px;
+}
