@@ -31,29 +31,25 @@ class Search extends Component {
                 debugger;
                 switch (this.state.filter) {
                     case 'all':
-                    console.log('alls');
+                        console.log('alls');
 
                         break;
 
                     case 'admin':
-                    console.log('admin');
-                        if (this.state.country !== '') {
-                            filtered = filtered.filter(person => person.country === this.state.country)
-                        }
-
+                        console.log('admin');
+                       
+                            filtered = filtered.filter(person => person.admin ===true)
+                       
                         break;
 
                     case 'nonadmin':
-                    console.log('nonadmin');
-                        filtered = filtered.map(person => ({
-                            ...person,
-                            netWorth: (person.netWorth * Number(this.state.currencyFactor))
-                        }))
+                        console.log('nonadmin');
+                        filtered = filtered.filter(person => person.admin ===false)
                         break;
 
                     case 'archived':
-                    console.log('archived');
-                    //filtered = _.sortBy(filtered, [this.state.orderBy])
+                        console.log('archived');
+                        filtered = filtered.filter(person => person.archived ===true)
                 }
 
                 this.setState({ filteredData: filtered });
