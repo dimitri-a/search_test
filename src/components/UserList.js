@@ -25,6 +25,10 @@ export default class UserList extends Component {
                         <div className="col-md-4 hidden-xs">
                             last loggedin :{person.lastLoggedIn}
                         </div>
+
+
+
+                        
                         <div className='visible-xs'>
 
                             <div className='col-xs-2'>
