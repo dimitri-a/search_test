@@ -18,7 +18,10 @@ class Search extends Component {
         this.setState({filteredData: this.state.data}, () => {
             let filtered = this.state.filteredData;
             if (this.state.search !== '') {
-                filtered = filtered.filter(person => person.name === event.value);
+                //todo remove
+                //debugger;
+                console.log('event.target.value=',this.refs.search.value);
+                filtered = filtered.filter(person => person.name ===this.refs.search.value);
             }
             this.setState({filteredData: filtered});
         });
@@ -29,7 +32,7 @@ class Search extends Component {
         console.log('this.state.filteredData=',this.state.filteredData);
         return (
             <div className="form-group container">
-                <input type="text" onChange={this.handleFilter}/>
+                <input type="text" ref="search" onChange={this.handleFilter}/>
                 <div className="list">
                     <UserList data={this.state.filteredData}></UserList>
                 </div>
