@@ -4,12 +4,14 @@
     "role": "admin",
     "archived": false,
     "favorite": false,
-    "lastLoggedIn": "11/06/2017"
+    "lastLoggedIn": "11/06/2017",
+    "email": "ted@hotmail.com"
   },{
     "name": "John",
     "role": "admin",
     "archived": false,
     "favorite": true,
-    "lastLoggedIn": "11/06/2017"
+    "lastLoggedIn": "11/06/2017",
+    "email": "John@hotmail.com"
   }
 ]

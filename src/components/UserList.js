@@ -9,37 +9,37 @@ export default class UserList extends Component {
                 (
                 (person) => (
                     <div key={person.name} className="row row_bottom ">
-                        <div className="col-md-2 top hidden-xs">
+                        <div className="col-md-2 hidden-xs">
                             <i class="fa fa-user-circle" aria-hidden="true"></i>
                         </div>
                         <div className="col-md-6 hidden-xs">
                             <div className="">
-                                <h3>
+                                <span className='imp'>
                                     Name:{person.name}
-                                </h3>
+                                </span>
                             </div>
                             <div className="row">
-                                email:bla@mail.com
+                                email:{person.email}
                             </div>
                         </div>
-                        <div className="col-md-4 top hidden-xs">
+                        <div className="col-md-4 hidden-xs">
                             last loggedin :{person.lastLoggedIn}
                         </div>
                         <div className='visible-xs'>
 
-                            <div className='col-xs-2 top'>
+                            <div className='col-xs-2'>
                                 <i class="fa fa-user-circle" aria-hidden="true"></i>
                             </div>
 
                             <div className='col-xs-10'>
                                 <div className="row">
-                                    <h3>
+                                    <span className='imp'>
                                         Name:{person.name}
-                                    </h3>
+                                    </span>
                                 </div>
                                 <div className="row">
-                                    email:bla@mail.com
-                            </div>
+                                    email:{person.email}
+                                </div>
                             </div>
 
                         </div>
@@ -54,6 +54,7 @@ export default class UserList extends Component {
         }
 
         return (<div>
+
             {display}
         </div>
         );
