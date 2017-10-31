@@ -30,3 +30,7 @@
 .row_bottom{
   border-bottom: 1px solid red;
 }
+
+.top{
+  margin-top: 23px;
+}
