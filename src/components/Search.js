@@ -21,7 +21,7 @@ class Search extends Component {
                 //todo remove
                 //debugger;
                 console.log('event.target.value=',this.refs.search.value);
-                filtered = filtered.filter(person => person.name ===this.refs.search.value);
+                filtered = filtered.filter(person => person.name.includes(this.refs.search.value) > 0 );
             }
             this.setState({filteredData: filtered});
         });
