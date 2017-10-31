@@ -4,12 +4,12 @@
     "role": "admin",
     "archived": false,
     "favorite": false,
-    "date": "11/06/2017"
+    "lastLoggedIn": "11/06/2017"
   },{
     "name": "John",
     "role": "admin",
     "archived": false,
     "favorite": true,
-    "date": "11/06/2017"
+    "lastLoggedIn": "11/06/2017"
   }
 ]

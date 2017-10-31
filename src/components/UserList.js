@@ -11,13 +11,15 @@ export default class UserList extends Component {
                     <div key={person.name} className="row">
 
                         <div className="col-md-2">
-                            icon
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>
                         </div>
 
                         <div className="col-md-6">
 
                             <div className="row">
+                                <h3>
                                 Name:{person.name}
+                                </h3>
 
                             </div>
 
@@ -29,7 +31,7 @@ export default class UserList extends Component {
 
 
                         <div className="col-md-4">
-                            last loggedin :yepyep
+                            last loggedin :{person.lastLoggedIn}
                         </div>
 
                     </div>
