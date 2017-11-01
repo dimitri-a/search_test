@@ -12,37 +12,32 @@ export default class UserList extends Component {
                         <div className="col-md-2 hidden-xs">
                             <i class="fa fa-user-circle" aria-hidden="true"></i>
                         </div>
-                        <div className="col-md-6 hidden-xs">
+                        <div className="col-md-6 hidden-xs left">
                             <div className="">
                                 <span className='imp'>
-                                    Name:{person.name}
+                                    {person.name}
                                 </span>
                             </div>
-                            <div className="row">
+                            <div className="">
                                 email:{person.email}
                             </div>
                         </div>
-                        <div className="col-md-4 hidden-xs">
-                            last loggedin :{person.lastLoggedIn}
+                        <div className="col-md-4 hidden-xs left">
+                            {person.lastLoggedIn}
                         </div>
-
-
-
-                        
                         <div className='visible-xs'>
-
-                            <div className='col-xs-2'>
+                            <div className='col-xs-2 left'>
                                 <i class="fa fa-user-circle" aria-hidden="true"></i>
                             </div>
 
-                            <div className='col-xs-10'>
+                            <div className='col-xs-10 left'>
                                 <div className="row">
                                     <span className='imp'>
-                                        Name:{person.name}
+                                        {person.name}
                                     </span>
                                 </div>
                                 <div className="row">
-                                    email:{person.email}
+                                    {person.email}
                                 </div>
                             </div>
 

@@ -28,7 +28,7 @@
 }
 
 .row_bottom{
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid lightgrey;
 }
 
 .top{
@@ -48,4 +48,12 @@ input{
 
 .btnwidth{
   width:150px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.left{
+  text-align: left;
 }

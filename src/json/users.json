@@ -6,12 +6,59 @@
     "favorite": false,
     "lastLoggedIn": "11/06/2017",
     "email": "ted@hotmail.com"
-  },{
+  }
+,
+  {
     "name": "John",
     "admin": false,
     "archived": false,
     "favorite": true,
     "lastLoggedIn": "11/06/2017",
     "email": "John@hotmail.com"
+  }
+,
+  {
+    "name": "Kate",
+    "admin": true,
+    "archived": false,
+    "favorite": true,
+    "lastLoggedIn": "11/06/2017",
+    "email": "Kate@hotmail.com"
+  }
+,
+  {
+    "name": "Ben",
+    "admin": false,
+    "archived": true,
+    "favorite": true,
+    "lastLoggedIn": "11/06/2017",
+    "email": "Ben@hotmail.com"
+  }
+,
+  {
+    "name": "Mark",
+    "admin": false,
+    "archived": false,
+    "favorite": true,
+    "lastLoggedIn": "11/06/2017",
+    "email": "Mark@hotmail.com"
+  }
+,
+  {
+    "name": "Luke",
+    "admin": false,
+    "archived": true,
+    "favorite": true,
+    "lastLoggedIn": "11/06/2017",
+    "email": "Luke@hotmail.com"
+  }
+,
+  {
+    "name": "Macy",
+    "admin": false,
+    "archived": false,
+    "favorite": false,
+    "lastLoggedIn": "11/06/2017",
+    "email": "macy@hotmail.com"
   }
 ]
