@@ -8,7 +8,7 @@ export default class UserList extends Component {
             (
                 (person) => (
                     <div key={person.name} className="row row_bottom ">
-                        <div className="col-md-2 hidden-xs">
+                        <div className="col-md-2 hidden-xs top">
                             <i class="fa fa-user-circle" aria-hidden="true"></i>
                         </div>
                         <div className="col-md-6 hidden-xs left">
@@ -25,7 +25,7 @@ export default class UserList extends Component {
                             {person.lastLoggedIn}
                         </div>
                         <div className='visible-xs'>
-                            <div className='col-xs-2 left'>
+                            <div className='col-xs-2 left top'>
                                 <i class="fa fa-user-circle" aria-hidden="true"></i>
                             </div>
 
@@ -37,6 +37,9 @@ export default class UserList extends Component {
                                 </div>
                                 <div className="row">
                                     {person.email}
+                                </div>
+                                <div className="row">
+                                    last login:{person.lastLoggedIn}
                                 </div>
                             </div>
                         </div>
