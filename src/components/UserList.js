@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 export default class UserList extends Component {
-
     render() {
         let display = '';
         if (this.props.data) {
             display = this.props.data.map
-                (
+            (
                 (person) => (
                     <div key={person.name} className="row row_bottom ">
                         <div className="col-md-2 hidden-xs">
@@ -40,22 +39,16 @@ export default class UserList extends Component {
                                     {person.email}
                                 </div>
                             </div>
-
                         </div>
-
-
-
-
                     </div>
-
                 )
-                );
+            );
         }
 
-        return (<div>
-
-            {display}
-        </div>
+        return (
+            <div>
+                {display}
+            </div>
         );
     }
 }
